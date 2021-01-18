@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Богдан Урбанович](https://up.htmlacademy.ru/htmlcss/30/user/1037633).
-* Наставник: `Неизвестно`.
+* Наставник: [Yehor Hliebov](https://htmlacademy.ru/profile/beast).
 
 ---
 
