@@ -1,0 +1,176 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-gray: #666666;
+  --basic-white: #ffffff;
+  --basic-background: #888888;
+  --basic-background-block: #eeeeee;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--basic-black);
+  background-color: var(--basic-background);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main-header */
+
+.main-header {
+  background-color: var(--basic-background-block);
+}
+
+.site-nav a {
+  font-size: 16px;
+  line-height: 30px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.site-nav li {
+  list-style-type: none;
+}
+
+/* slider */
+
+.slider {
+  background-color: var(--basic-background-block);
+}
+
+.slider_subtitle {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-more {
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+/* features */
+
+.features-items h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.features-items a {
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+/* about */
+
+.about-caption {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-right-block p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-nomber td {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.about-nomber sup {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* map */
+
+.map-companies-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-gray);
+}
+
+.map a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-gray);
+}
+
+/* footer */
+
+.footer-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+                                                    /* catalog */
+
+/* container */
+
+.container li {
+  list-style-type: none;
+}
+
+.main-uptext {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.container h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product-price {
+  color: var(--basic-white);
+}
+
+.product-nav-item a {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-hover {
+  background-color: var(--basic-background-block);
+}
