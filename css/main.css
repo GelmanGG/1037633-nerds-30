@@ -8,8 +8,12 @@
   --basic-background-block: #eeeeee;
 }
 
-body {
-  min-width: 960px;
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-width: 1100px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -17,7 +21,11 @@ body {
   line-height: 24px;
   font-weight: normal;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -29,13 +37,31 @@ a {
   text-decoration: none;
 }
 
+.off {
+  display: none;
+}
+
 /* main-header */
 
 .main-header {
   background-color: var(--basic-background-block);
 }
 
+.site-nav {
+  margin: 0px;
+  padding: 0px;
+}
+
 .site-nav a {
+  font-size: 16px;
+  line-height: 30px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.user-nav a {
   font-size: 16px;
   line-height: 30px;
   font-style: normal;
@@ -51,6 +77,7 @@ a {
 /* slider */
 
 .slider {
+  margin-bottom: 80px;
   background-color: var(--basic-background-block);
 }
 
@@ -58,6 +85,9 @@ a {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .slider-more {
@@ -67,6 +97,13 @@ a {
 }
 
 /* features */
+
+.features {
+  padding-bottom: 80px;
+  margin-bottom: 73px;
+
+  border-bottom: 2px solid var(--basic-background-block);
+}
 
 .features-items h3 {
   font-weight: bold;
@@ -87,6 +124,9 @@ a {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .about-title {
@@ -113,6 +153,10 @@ a {
 
 /* map */
 
+.map {
+  margin-bottom: 70px;
+}
+
 .map-companies-name {
   font-weight: bold;
   font-size: 18px;
@@ -134,10 +178,18 @@ a {
 
 /* footer */
 
+.footer-social {
+  font-size: 0;
+
+}
+
 .footer-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+
+  margin: 0px;
+  padding: 0px;
 }
 
                                                     /* catalog */
@@ -176,4 +228,85 @@ a {
 }
 
 
-/* 2 pull */
+/* Grid */
+
+.main-nav {
+  display: grid;
+}
+
+.main-nav-wrap {
+  display: grid;
+  grid-template-columns: auto 1fr min-content;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-bar {
+  background-color: var(--basic-background-block);
+}
+
+.slider-wrap {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: var(--basic-background-block);
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.companies {
+  margin-bottom: 80px;
+}
+
+.companies-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.companies-item {
+  font-size: 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  column-gap: 130px;
+}
+
+.map-info-wrap {
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-background); /* для наглядности */
+}
+
+.map-info {
+  padding: 50px;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 140px;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*.footer-social-icon img {
+  width: 81px;
+  height: 81px;
+}
+*/
