@@ -50,6 +50,9 @@ a {
 .site-nav {
   margin: 0px;
   padding: 0px;
+
+  margin-left: 200px;
+  padding-top: 30px;
 }
 
 .site-nav a {
@@ -59,6 +62,10 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.user-nav {
+  padding-top: 30px;
 }
 
 .user-nav a {
@@ -73,6 +80,9 @@ a {
 .site-nav li {
   list-style-type: none;
   display: inline;
+
+  margin-right: 45px;
+  padding-top: 10px;
 }
 
 /* slider */
@@ -82,19 +92,44 @@ a {
   background-color: var(--basic-background-block);
 }
 
-.slider_subtitle {
+.slider h3 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 
   margin: 0;
   padding: 0;
+
+  margin-bottom: 25px;
 }
 
-.slider-more {
+.slider p {
+  margin-bottom: 38px;
+}
+
+.slider a {
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 240px;
+  height: 50px;
+  background: #FB565A;
+}
+
+.slider-wrap {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: var(--basic-background-block);
+}
+
+.slider_two, .slider_tree {
+  display: none;
 }
 
 /* features */
@@ -119,7 +154,33 @@ a {
   text-transform: uppercase;
 }
 
+.features-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+
+  width: 160px;
+  height: 50px;
+}
+
+.features-items:nth-child(1) a {
+  background: #FB565A;
+}
+
+.features-items:nth-child(2) a {
+  background: #00CA74;
+}
+
+.features-items:nth-child(3) a {
+  background: #EFC849;;
+}
+
 /* about */
+
+.about {
+  margin-bottom: 75px;
+}
 
 .about-caption {
   font-weight: 500;
@@ -128,16 +189,36 @@ a {
 
   margin: 0;
   padding: 0;
+
+  margin-bottom: 32px;
 }
 
 .about-title {
   font-weight: bold;
   text-transform: uppercase;
+
+  margin-bottom: 23px;
+}
+
+.about-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.about-caption-low {
+  margin-bottom: 40px;
 }
 
 .about-right-block p {
   font-weight: bold;
   text-transform: uppercase;
+
+  margin-top: 37px;
+  margin-bottom: 31px;
+}
+
+.about-nomber {
+  margin-bottom: 20px;
 }
 
 .about-nomber td {
@@ -152,10 +233,19 @@ a {
   line-height: 40px;
 }
 
+.about-desc {
+  border-spacing: 10px;
+}
+
 /* map */
 
 .map {
   margin-bottom: 70px;
+  background: url(../img/map.svg); /* временно */
+  height: 416px;
+  width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 68px;
 }
 
 .map-companies-name {
@@ -171,17 +261,46 @@ a {
   color: var(--basic-gray);
 }
 
-.map a {
+.map-number {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-gray);
 }
 
+.map-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 219px;
+  height: 50px;
+  background: #FB565A;
+}
+
 /* footer */
 
-.footer-social {
-  font-size: 0;
+.footer-social-icon {
+  display: flex;
+}
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0;
+  width: 81px;
+  height: 81px;
+  border-radius: 50px;
+  margin-right: 10px;
+
+  background: var(--basic-background-block);
 }
 
 .footer-title {
@@ -191,6 +310,10 @@ a {
 
   margin: 0px;
   padding: 0px;
+}
+
+.footer-right-block {
+  padding-top: 15px;
 }
 
                                                     /* catalog */
@@ -241,19 +364,14 @@ a {
   display: grid;
   grid-template-columns: auto 1fr min-content;
   width: 1100px;
+
   margin: 0 auto;
   margin-top: 50px;
   padding: 0 10px;
+  padding-bottom: 78px;
 }
 
 .main-header-bar {
-  background-color: var(--basic-background-block);
-}
-
-.slider-wrap {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 0 10px;
   background-color: var(--basic-background-block);
 }
 
@@ -286,14 +404,17 @@ a {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr auto;
   column-gap: 130px;
 }
 
 .map-info-wrap {
   width: 319px;
   height: 308px;
-  background-color: var(--basic-background-block);
+
+  margin-top: 54px;
+  margin-left: 160px;
+  background-color: var(--basic-white);
 }
 
 .map-info {
@@ -306,6 +427,7 @@ a {
   column-gap: 140px;
   width: 1100px;
   margin: 0 auto;
+  margin-bottom: 68px;
   padding: 0 10px;
 }
 
