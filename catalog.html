@@ -45,7 +45,7 @@
         <h3>Стоимость:</h3>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend><h3>Сетка:</h3></legend>
+            <legend><h4>Сетка:</h4></legend>
             <ul class="filter-type">
               <li>
                 <input type="radio" name="grid" id="filter-adaptive" checked>
@@ -62,7 +62,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend><h3>Особенности:</h3></legend>
+            <legend><h4>Особенности:</h4></legend>
             <ul class="filter-type">
               <li>
                 <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -97,8 +97,8 @@
             <li>По цене</li>
             <li>По типу</li>
             <li>По названию</li>
-            <li>Стрелка вниз</li>
-            <li>Стрелка вверх</li>
+            <li><img src="img/icon-down-dir.svg" alt="#"></li>
+            <li><img src="img/icon-up-dir.svg" alt="#"></li>
           </ul>
         </div>
         <ul class="product-list">
@@ -171,33 +171,34 @@
         </ul>
         <ul class="product-nav">
           <li class="product-nav-item">
-            <a class="btn">1</a>
+            <a class="link-bot link-bot-active btn" href="#">1</a>
           </li>
           <li class="product-nav-item">
-            <a class="btn" href="#">2</a>
+            <a class="link-bot btn" href="#">2</a>
           </li>
           <li class="product-nav-item">
-            <a class="btn" href="#">3</a>
+            <a class="link-bot btn" href="#">3</a>
           </li>
           <li class="product-nav-item">
-            <a class="btn" href="">Следующая</a>
+            <a class="link-bot link-bot-next btn" href="">Следующая</a>
           </li>
         </ul>
       </section>
     </div>
-
-    <section class="map">
-      <h2 class="off">Адрес</h2>
-      <div class="map-info-wrap">
-        <div class="map-info">
-          <p class="map-companies-name">NЁRDS DESIGN STUDIO</p>
-          <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
-          <p class="map-text"><a href="tel:+78122757575" title="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <button class="btn" type="button" title="writeus">Напишите нам</button>
-        </div>
-      </div>
-    </section>
   </main>
+
+  <section class="map">
+    <h2 class="off">Адрес</h2>
+    <div class="map-info-wrap">
+      <div class="map-info">
+        <p class="map-companies-name">NЁRDS DESIGN STUDIO</p>
+        <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
+        <p class="map-text"><a class="map-number" href="tel:+78122757575" title="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+        <a class="map-btn btn" href="#" title="writeus">Напишите нам</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="main-footer">
     <div class="footer-social-icon">
       <a class="footer-social" href="#" title="incontact"><img src="img/vk-icon.svg" alt="#">ВКонтакте</a>
