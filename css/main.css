@@ -567,8 +567,7 @@ a {
 }
 
 .link-bot-active {
-  width: 45.2px;
-  height: 45.2px;
+  box-sizing: border-box;
   background-color: var(--basic-white);
   border: 3px solid var(--basic-background-block);
   pointer-events: none;
