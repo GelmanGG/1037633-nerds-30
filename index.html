@@ -38,25 +38,32 @@
   <section class="slider">
     <div class="slider-wrap">
       <h1 class="off">Интернет магазин «Nerds»</h1>
-      <section class="slider slider_one">
+      <section class="slider_block">
         <h3>Долго, дорого,<br> скрупулезно.</h3>
         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#" title="info">Узнать больше</a>
+        <a class="btn btn_red" href="#" title="info">
+          <p class="trans slider_btn_txt">Узнать больше</p>
+        </a>
       </section>
-      <section class="slider slider_two">
+      <section class="slider_block slider_deactive">
         <h3>Любим математику<br> как никто другой</h3>
         <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-        <a class="btn" href="#" title="info">Узнать больше</a>
+        <a class="btn btn_red" href="#" title="info">
+          <p class="trans slider_btn_txt">Узнать больше</p>
+        </a>
       </section>
-      <section class="slider slider_tree">
+      <section class="slider_block slider_deactive">
         <h3>Только ночь,<br> только хардкор</h3>
         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-        <a class="btn" href="#" title="info">Узнать больше</a>
+        <a class="btn btn_red" href="#" title="info">
+          <p class="trans slider_btn_txt">Узнать больше</p>
+        </a>
       </section>
     </div>
   </section>
 
   <main class="container">
+
     <section class="features">
       <h2 class="off">Услуги</h2>
       <ul class="features-list">
@@ -64,19 +71,25 @@
           <img src="img/illustration1.svg" alt="#">
           <h3>Веб-сайт</h3>
           <p>Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
-          <a class="btn features-btn" href="#" title="order">Заказать</a>
+          <a class="btn features-btn btn_red" href="#" title="order">
+            <p class="trans features_btn_txt">Заказать</p>
+          </a>
         </li>
         <li class="features-items">
           <img src="img/illustration2.svg" alt="#">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
-          <a class="btn features-btn" href="#" title="order">Заказать</a>
+          <a class="btn features-btn btn_green" href="#" title="order">
+            <p class="trans features_btn_txt">Заказать</p>
+          </a>
         </li>
         <li class="features-items">
           <img src="img/illustration3.svg" alt="#">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
-          <a class="btn features-btn" href="#" title="order">Заказать</a>
+          <a class="btn features-btn btn-yellow" href="#" title="order">
+            <p class="trans features_btn_txt">Заказать</p>
+          </a>
         </li>
       </ul>
     </section>
@@ -89,19 +102,19 @@
         <p class="about-title">Выполняем заказы на разработку:</p>
         <ul class="about-list">
           <li class="about-item">
-            <p>Веб-сайтов любой сложности</p>
+            <p class="about-item-txt">Веб-сайтов любой сложности</p>
           </li>
           <li class="about-item">
-            <p>Мобильных приложений для iOS и Android</p>
+            <p class="about-item-txt">Мобильных приложений для iOS и Android</p>
           </li>
           <li class="about-item">
-            <p>Слайдшоу и видео для корпоративных презентаций</p>
+            <p class="about-item-txt">Слайдшоу и видео для корпоративных презентаций</p>
           </li>
         </ul>
       </div>
       <div class="about-right-block">
         <img src="img/illustration4.svg" alt="#">
-        <p>с 2004 года Любим точность во всем:</p>
+        <p class="about-r-b-2004">с 2004 года Любим точность во всем:</p>
         <table class="about-desc">
           <tr class="about-nomber">
             <td>146<sup>%</sup></td>
@@ -119,10 +132,10 @@
     <section class="companies">
       <h2 class="off">Производители</h2>
       <ul class="companies-list">
-        <li class="companies-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" title="htmlacademy">htmlacademy</a></li>
-        <li class="companies-item"><a href="#"><img src="img/borodinski.svg" title="Borodinski">Borodinski</a></li>
-        <li class="companies-item"><a href="#"><img src="img/pink.svg" title="Pink">Pink</a></li>
-        <li class="companies-item"><a href="#"><img src="img/mishka.svg" title="Mishka">Mishka</a>
+        <li class="companies-item companies-img-academy"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/companies_academy.svg" title="htmlacademy">htmlacademy</a></li>
+        <li class="companies-item companies-img-boroda"><a href="#"><img src="img/companies_barber.svg" title="Borodinski">Borodinski</a></li>
+        <li class="companies-item companies-img-pink"><a href="#"><img src="img/companies_pink.svg" title="Pink">Pink</a></li>
+        <li class="companies-item companies-img-mishka"><a href="#"><img src="img/companies_mishka.svg" title="Mishka">Mishka</a>
         </li>
       </ul>
     </section>
@@ -130,23 +143,26 @@
 
   <section class="map">
     <h2 class="off">Адрес</h2>
+    <iframe class="map_nav" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598640367278!2d30.32037180863602!3d59.93880188067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1615378447541!5m2!1sru!2sua" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="map-info-wrap">
       <div class="map-info">
-        <p class="map-companies-name">NЁRDS DESIGN STUDIO</p>
+        <p class="map_shop_name">NЁRDS DESIGN STUDIO</p>
         <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
         <p class="map-text"><a class="map-number" href="tel:+78122757575" title="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-        <a class="map-btn btn" href="#" title="writeus">Напишите нам</a>
+        <a class="btn map-btn btn_red" href="#" title="writeus">
+          <p class="trans">Напишите нам</p>
+        </a>
       </div>
     </div>
   </section>
 
   <footer class="main-footer">
     <div class="footer-social-icon">
-      <a class="footer-social" href="#" title="incontact"><img src="img/vk-icon.svg" alt="#">ВКонтакте</a>
-      <a class="footer-social" href="#" title="facebook"><img src="img/fb-icon.svg" alt="#">Facebook</a>
-      <a class="footer-social" href="#" title="instagram"><img src="img/insta-icon.svg" alt="#">Instagram</a>
+      <a class="footer-social btn_red" href="#" title="incontact"><img class="trans_img" src="img/vk-icon.svg" alt="#">ВКонтакте</a>
+      <a class="footer-social btn_red" href="#" title="facebook"><img class="trans_img" src="img/fb-icon.svg" alt="#">Facebook</a>
+      <a class="footer-social btn_red" href="#" title="instagram"><img class="trans_img" src="img/insta-icon.svg" alt="#">Instagram</a>
     </div>
-    <div class="footer-right-block">
+    <div>
       <p class="footer-title">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
