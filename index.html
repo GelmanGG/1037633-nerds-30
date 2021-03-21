@@ -143,7 +143,7 @@
 
   <section class="map">
     <h2 class="off">Адрес</h2>
-    <iframe class="map_nav" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598640367278!2d30.32037180863602!3d59.93880188067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1615378447541!5m2!1sru!2sua" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map_nav" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598640367278!2d30.32037180863602!3d59.93880188067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1615378447541!5m2!1sru!2sua" width="1515" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="map-info-wrap">
       <div class="map-info">
         <p class="map_shop_name">NЁRDS DESIGN STUDIO</p>
@@ -167,6 +167,38 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <div class="modal-email">
+    <div class="modal-top-wrap">
+      <h2>Напишите нам</h2>
+      <div class="modal-email-close-btn"></div>
+    </div>
+    <div class="modal-form-wrap">
+      <form class="modal-email-form" action="/auth" method="post">
+
+        <div class="form-label-wrap">
+          <label class="form-txt" for="login-field">Ваше имя:</label>
+          <label class="form-txt" for="email-field">Ваш e-mail:</label>
+        </div>
+
+        <div class="form-input-wrap">
+          <input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста">
+          <input type="email" name="email" id="email-field" required placeholder="Для отправки ответа">
+        </div>
+
+        <div class="form-massage-wrap">
+          <label class="form-txt" for="message-field">Текст письма:</label>
+          <textarea name="message" id="message-field" rows="10" cols="100" placeholder="В свободной форме"></textarea>
+        </div>
+
+          <div class="form-btn">
+            <input type="submit" value="Отправить">
+          </div>
+
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>

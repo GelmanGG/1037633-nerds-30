@@ -467,6 +467,9 @@ section.slider_block:nth-child(2) > p:nth-child(2) {
   width: 319px;
   height: 308px;
 
+  bottom: 40px;
+  left: 145px;
+
   margin-top: -365px;
   margin-left: 140px;
   background-color: var(--basic-white);
@@ -474,12 +477,18 @@ section.slider_block:nth-child(2) > p:nth-child(2) {
 
 .map-info {
   padding: 50px;
+  z-index: 10;
 }
 
 .map-btn > p:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.map_nav {
+  position: absolute;
+  right: -38px;
 }
 
 /* footer */
@@ -603,6 +612,39 @@ section.slider_block:nth-child(2) > p:nth-child(2) {
   border-bottom: 2px solid var(--basic-background-block);
   padding-bottom: 17px;
   margin-bottom: 80px;
+}
+
+.companies-list li {
+  position: relative;
+}
+
+.companies-img-academy::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background-block);
+  right: 31px;
+}
+
+.companies-img-boroda::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background-block);
+  right: 4px;
+  top: 45px;
+}
+
+.companies-img-pink::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: var(--basic-background-block);
+  right: -17px;
+  top: 45px;
 }
 
 .companies img {
@@ -768,6 +810,7 @@ li.features-items:nth-child(3) {
 
 .filter-type li {
   margin-bottom: 16px;
+  padding-left: 45px;
 }
 
 .filt-up-txt {
@@ -1008,4 +1051,172 @@ li.features-items:nth-child(3) {
 
 .btn_filter:active {
   background-color: var(--basik_btn_active);
+}
+
+
+/* Filter castom */
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--basic-background);
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/Shape.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--basic-background);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36.5px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-background);
+  border-radius: 50%;
+}
+
+                  /* modal */
+
+.modal-email {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #a7a7a7;
+  display: none;
+  min-height: 320px;
+  margin-top: -210px;
+  margin-left: -315px;
+  padding: 45px 45px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 960px;
+  height: 590px;
+  z-index: 1000;
+}
+
+.modal-top-wrap {
+  display: flex;
+}
+
+.modal-email h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal-email-close-btn {
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/close-cross.png);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  margin-left: 555px;
+  margin-top: 50px;
+}
+
+.modal-email-close-btn:hover {
+  opacity: 1;
+}
+
+.modal-email-close-btn:active {
+  opacity: 0.1;
+}
+
+.form-input-wrap input {
+  width: 360px;
+  height: 50px;
+}
+
+#email-field {
+  margin-left: 60px;
+}
+
+.form-label-wrap > label:nth-child(2) {
+  margin-left: 340px;
+}
+
+.form-txt {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form-massage-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.modal-email-form input {
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.modal-email-form textarea {
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.form-btn {
+  margin-top: 50px;
+}
+
+.form-btn input {
+  width: 260px;
+  height: 50px;
+  border-radius: 3px;
+  border: 0;
+  background-color: var(--basik_red_stat);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--basic-white);
 }
