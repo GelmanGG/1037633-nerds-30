@@ -108,6 +108,12 @@ a {
   padding-bottom: 16px;
 }
 
+.page-active-ind {
+  border-bottom: 2px solid red;
+  box-sizing: border-box;
+  padding-bottom: 16px;
+}
+
 .user-nav {
   position: relative;
   padding-top: 25px;
@@ -1071,15 +1077,18 @@ li.features-items:nth-child(3) {
   width: 16px;
   height: 16px;
   border: 2px solid var(--basic-background);
+  /*background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;*/
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -38px;
-  width: 12px;
-  height: 12px;
+  top: 0px;
+  left: -42px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/Shape.png");
   background-repeat: no-repeat;
   background-position: 0 0;
